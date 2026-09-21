@@ -1,142 +1,144 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Thais | Desenvolvedora</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<!doctype html>
+<html lang="pt-BR"><head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#0c0b12">
+
+    <meta name="description" content="Portfólio de Thais Sthephanye: interfaces web, aplicações em React, projetos com dados e experiências interativas.">
+
+    <title>Thais Sthephanye — Desenvolvedora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css?v=5">
+
+    <script defer="" src="script.js"></script>
+
   </head>
+
   <body>
-    <!-- Header/Navbar -->
-    <header>
-      <nav>
-        <h1 class="logo">{Thais Sthephanye}</h1>
-        <ul class="nav-links">
-          <li><a href="#home">Início</a></li>
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#projects">Projetos</a></li>
-          <li><a href="#contact">Contato</a></li>
-        </ul>
-        <button class="menu-toggle" aria-label="Abrir menu">
-          <i class="fas fa-bars"></i>
-        </button>
+
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <header class="site-header">
+
+      <nav class="shell nav" aria-label="Navegação principal">
+
+        <a class="brand" href="#inicio" aria-label="Thais Sthephanye, início"><span class="brand-mark">t<span>.</span>s</span><span class="brand-name">thais sthephanye</span></a>
+
+        <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="nav-links" aria-expanded="false"><span></span><span></span><span></span></button>
+
+        <div class="nav-links" id="nav-links">
+
+          <a href="#projetos">Projetos</a>
+
+          <a href="#sobre">Sobre</a>
+
+          <a href="#contato">Contato</a>
+
+          <a class="nav-github" href="https://github.com/thaissthephanye" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+
+        </div>
+
       </nav>
+
     </header>
 
-    <!--Home-->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <h2>Olá, eu sou <span class="highlight">Thais</span></h2>
-        <h3>Desenvolvedora Front-End</h3>
-        <p>Criando interfaces modernas e responsivas com paixão por código.</p>
-        <a href="#projects" class="btn">Ver Projetos</a>
-      </div>
-      <div class="hero-img">
-        <img src="assets/avatar/UkXn.gif" alt="Gif anime computador" />
-      </div>
-    </section>
 
-    <!--Sobre Mim -->
-    <section id="about" class="about">
-      <h2 class="section-title">Sobre Mim</h2>
-      <div class="about-content">
-        <p>
-          Sou uma desenvolvedora front-end apaixonada por criar experiências web
-          incríveis. Atualmente, estou focada em
-          <span class="highlight">HTML, CSS, JavaScript</span> e aprendendo
-          <span class="highlight">React</span>. Adoro fazer a mágia da
-          programação acontecer e transformar designs em código funcional!
-        </p>
-        <div class="skills">
-          <h3>Habilidades:</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>Git/GitHub</li>
-            <li>Responsive Design</li>
-            <li>Bootstrap</li>
-            <li>React</li>
-          </ul>
+
+    <main id="conteudo">
+
+      <section class="hero shell" id="inicio" aria-labelledby="hero-title">
+
+        <div class="hero-copy">
+
+          <p class="eyebrow"><span class="signal" aria-hidden="true"></span> PORTFÓLIO / THAIS STHEPHANYE</p>
+
+          <h1 id="hero-title">Faço sites,<br><em>jogos e apps</em><br>para a web<span class="period">.</span></h1>
+
+          <p class="hero-description">Trabalho principalmente com front-end. Aqui estão um guia do Brejo Paraibano, uma loja virtual, um jogo em canvas e uma aplicação com dados do Censo Escolar.</p>
+
+          <div class="hero-actions"><a class="button button-primary" href="#projetos">Ver projetos <span aria-hidden="true">↘</span></a><a class="button button-text" href="#contato">Entrar em contato <span aria-hidden="true">↗</span></a></div>
+
+          <p class="hero-footnote">HTML · CSS · JavaScript · React</p>
+
         </div>
-      </div>
-    </section>
 
-    <!--Projetos -->
-    <section id="projects" class="projects">
-      <h2 class="section-title">Projetos</h2>
-      <div class="projects-grid">
-        <!-- Projeto 1 -->
-        <div class="project-card">
-          <img src="assets/projects/tela1.png" alt="Projeto 1" />
-          <h3>Code Adventure</h3>
-          <p>
-            Um mini jogo onde você vai subindo degraus, os projetos, e ganhando
-            pontos/coins que são as habilidades em programação front-end.
-          </p>
-          <div class="project-links">
-            <a
-              href="https://drive.google.com/file/d/1bsT_FQNZctvnkYiP0ZEP2er2pMFj0Dpy/view?usp=sharing"
-              target="_blank"
-              ><i class="fas fa-link"></i> Live Demo</a
-            >
-            <a
-              href="https://github.com/thaissthephanye/code-adventure"
-              target="_blank"
-              ><i class="fab fa-github"></i> Código</a
-            >
+        <div class="hero-art" aria-label="Ilustração de janelas de código e projetos" role="img">
+
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+
+          <div class="floating-label label-top">front-end <span>+</span> dados</div>
+
+          <div class="editor">
+
+            <div class="editor-top"><div class="dots"><i></i><i></i><i></i></div><span>thais / projetos.js</span><span class="editor-icon">↗</span></div>
+
+            <div class="editor-body"><div class="line-no">01<br>02<br>03<br>04<br>05<br>06<br>07</div><div class="code"><span class="purple">const</span> <span class="white">thais</span> = {<br>&nbsp;&nbsp;<span class="pink">foco</span>: <span class="green">'front-end'</span>,<br>&nbsp;&nbsp;<span class="pink">cria</span>: [<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'sites'</span>,<br>&nbsp;&nbsp;&nbsp;&nbsp;<span class="green">'jogos'</span><br>&nbsp;&nbsp;]<br>};<span class="cursor">▍</span></div></div>
+
+            <div class="editor-bottom"><span><span class="status-dot"></span> 5 projetos selecionados</span><span>☕ + ✦</span></div>
+
           </div>
+
+          <div class="floating-label label-bottom"><span class="sparkle">✦</span> projetos no GitHub</div>
+
         </div>
-        <!-- Projeto 2 -->
-        <div class="project-card">
-          <img src="assets/projects/tela-proj2.png" alt="Projeto 2" />
-          <h3>RPG Search</h3>
-          <p>
-            Um site de RPG com 12 classes (como Guerreiro, Feiticeira ou
-            Espiritualista), cada uma com habilidades icônicas. Passe o mouse
-            para ver atributos e habilidades.
-          </p>
-          <div class="project-links">
-            <a href="#" target="_blank"
-              ><i class="fas fa-link"></i> Live Demo</a
-            >
-            <a
-              href="https://github.com/thaissthephanye/rpg-selector"
-              target="_blank"
-              ><i class="fab fa-github"></i> Código</a
-            >
+
+        <a class="scroll-cue" href="#projetos">desça para ver os projetos <span aria-hidden="true">↓</span></a>
+
+      </section>
+
+
+
+      <section class="work-section" id="projetos" aria-labelledby="work-title">
+
+        <div class="shell">
+
+          <div class="section-intro"><div><p class="section-kicker">01 / PROJETOS</p><h2 id="work-title">Projetos que <em>fiz.</em></h2></div><p>Um site de turismo, uma loja virtual, dados da educação e dois projetos interativos.</p></div>
+
+          <div class="project-list">
+
+            <article class="project feature-project"><div class="project-visual visual-trilhas" aria-hidden="true"><div class="visual-browser"><div class="browser-dots"><i></i><i></i><i></i></div><span>alysontrilhas</span></div><div class="trilhas-landscape"><div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div><div class="trail"></div></div><div class="visual-overlay"><small>EXPERIÊNCIAS NO BREJO PARAIBANO</small><strong>O Brejo se conhece<br>no caminho.</strong></div></div><div class="project-content"><div class="project-meta"><span>01 / WEBSITE</span><span>2026</span></div><h3>Alyson Trilhas</h3><p>Um guia visual do Brejo Paraibano com roteiros, filtros de experiências e detalhes interativos de cada destino.</p><ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-link" href="https://github.com/thaissthephanye/alyson-trilhas" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+
+            <article class="project feature-project"><div class="project-visual visual-lumin" aria-hidden="true"><div class="visual-browser"><div class="browser-dots"><i></i><i></i><i></i></div><span>lumin / coleção</span></div><div class="lumin-frame"><span>nova coleção</span><strong>LUMIN</strong><i>peças para iluminar o seu estilo</i><div class="lumin-button">explorar coleção ↗</div></div><div class="lumin-glow"></div></div><div class="project-content"><div class="project-meta"><span>02 / E-COMMERCE</span><span>2025</span></div><h3>LUMIN</h3><p>Uma loja virtual com catálogo dinâmico, carrinho persistido no navegador e fluxo de checkout simulado.</p><ul class="tags" aria-label="Tecnologias"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul><a class="project-link" href="https://github.com/thaissthephanye/EcommerceLumin" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+
+            <article class="project feature-project"><div class="project-visual visual-censo" aria-hidden="true"><div class="visual-browser"><div class="browser-dots"><i></i><i></i><i></i></div><span>censo escolar / PB</span></div><div class="chart-panel"><span>TOP 3 INSTITUIÇÕES</span><div class="chart-row"><i>01</i><b style="--width: 92%"></b></div><div class="chart-row"><i>02</i><b style="--width: 70%"></b></div><div class="chart-row"><i>03</i><b style="--width: 52%"></b></div><small>Censo Escolar 2024 · Paraíba</small></div><div class="data-badge">dados → interface</div></div><div class="project-content"><div class="project-meta"><span>03 / DADOS + WEB</span><span>2025</span></div><h3>Censo Escolar PB</h3><p>Do processamento dos microdados em Python a uma interface React que apresenta as três instituições da Paraíba com mais matrículas.</p><ul class="tags" aria-label="Tecnologias"><li>Python</li><li>React</li><li>Bootstrap</li></ul><div class="project-link-group"><a class="project-link" href="https://github.com/thaissthephanye/MinhaAppReact" target="_blank" rel="noopener noreferrer">Interface React <span aria-hidden="true">↗</span></a><a class="project-link secondary-link" href="https://github.com/thaissthephanye/CensoEscolarDataApp" target="_blank" rel="noopener noreferrer">Dados em Python <span aria-hidden="true">↗</span></a></div></div></article>
+
           </div>
+
+          <div class="more-heading"><div><p class="section-kicker">OUTROS PROJETOS</p><h3>Jogos e testes<span class="period">.</span></h3></div><p>Um jogo em canvas e um seletor de personagens de RPG.</p></div>
+
+          <div class="more-grid"><article class="small-project"><div class="small-icon icon-game" aria-hidden="true">{ <span>▶</span> }</div><span class="small-type">JOGO WEB</span><h4>Code Adventure</h4><p>Um jogo em canvas para coletar habilidades e descobrir projetos enquanto avança pelas fases.</p><div class="small-footer"><span>JavaScript · Canvas</span><a href="https://github.com/thaissthephanye/code-adventure" target="_blank" rel="noopener noreferrer" aria-label="Ver Code Adventure no GitHub">↗</a></div></article><article class="small-project"><div class="small-icon icon-rpg" aria-hidden="true">✧</div><span class="small-type">INTERAÇÃO WEB</span><h4>Seletor de RPG</h4><p>Personagens, atributos e habilidades apresentados em uma interface interativa de seleção.</p><div class="small-footer"><span>HTML · CSS · JavaScript</span><a href="https://github.com/thaissthephanye/rpg-selector" target="_blank" rel="noopener noreferrer" aria-label="Ver Seletor de RPG no GitHub">↗</a></div></article></div>
+
+          <a class="all-repos" href="https://github.com/thaissthephanye?tab=repositories" target="_blank" rel="noopener noreferrer">Ver todos os repositórios no GitHub <span aria-hidden="true">↗</span></a>
+
         </div>
-        <!-- para add mais projetos -->
-      </div>
-    </section>
 
-    <!-- Contato -->
-    <section id="contact" class="contact">
-      <h2 class="section-title">Contato</h2>
-      <p>Quer bater um papo ou trabalhar juntos? Me envie uma mensagem!</p>
-      <div class="contact-links">
-        <a href="thaissthephanye@gmail.com" target="_blank">
-          <i class="fas fa-envelope"></i> Email
-        </a>
-        <a href="https://github.com/thaissthephanye" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-        <a href="https://www.linkedin.com/in/thais-s-almeida/" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>Feito com ❤️ por Thais Sthephanye | 2025</p>
-    </footer>
 
-    <script src="script.js"></script>
-  </body>
-</html>
+
+      <section class="about-section shell" id="sobre" aria-labelledby="about-title"><div class="about-heading"><p class="section-kicker">02 / UM POUCO SOBRE MIM</p><h2 id="about-title">Sobre mim<br><em>e o que faço.</em></h2><div class="about-decoration" aria-hidden="true">&lt;/&gt;<span>✳</span></div></div><div class="about-details"><p>Sou formada em Gestão de TI e técnica em Informática. Hoje estudo desenvolvimento web e trabalho principalmente com HTML, CSS, JavaScript e React. Também usei Python para preparar dados do Censo Escolar 2024.</p><p>Code Adventure e Seletor de RPG são dois projetos que fiz para praticar JavaScript de um jeito mais interativo.</p><div class="skills-block"><h3>Ferramentas que aparecem nos meus projetos</h3><ul class="skill-list"><li>HTML &amp; CSS</li><li>JavaScript</li><li>React</li><li>Bootstrap</li><li>Python</li><li>Git &amp; GitHub</li></ul></div></div></section>
+
+
+
+      <section class="contact-section" id="contato" aria-labelledby="contact-title"><div class="shell contact-inner"><div><p class="section-kicker">03 / CONTATO</p><h2 id="contact-title">Quer falar<br><em>comigo?</em></h2><p>Se quiser conversar sobre algum projeto ou oportunidade, me escreva.</p><a class="button button-primary" href="mailto:thaissthephanye@gmail.com">Enviar um e-mail <span aria-hidden="true">↗</span></a></div><div class="contact-orbit" aria-hidden="true"><span>✳</span></div></div></section>
+
+    </main>
+
+
+
+    <footer class="site-footer"><div class="shell footer-inner"><a class="brand" href="#inicio" aria-label="Voltar ao início"><span class="brand-mark">t<span>.</span>s</span></a><p>Thais Sthephanye · <span id="year">2026</span></p><div class="footer-links"><a href="https://github.com/thaissthephanye" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/thais-s-almeida/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:thaissthephanye@gmail.com">E-mail ↗</a></div></div></footer>
+
+  
+
+
+
+</body></html>
